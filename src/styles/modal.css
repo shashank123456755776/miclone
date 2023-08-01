@@ -1,0 +1,96 @@
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(44, 41, 41, 0.759);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+  max-height: 600px;
+  min-height: 300px;
+  align-items: center;
+}
+
+.modal-content img {
+  width: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-content h3 {
+  font-weight: 500;
+  font-size: 30px;
+  margin-left: 160px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-family: ProximaNova, Arial, Sans-serif;
+}
+
+.close-modal {
+  position: absolute;
+  top: 35px;
+  right: -180px;
+  padding: 5px 5px;
+  border-radius: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.CloseIcon {
+  font-weight: bolder;
+  font-size: 30px !important;
+}
+
+.close-modal:hover {
+  background-color: red;
+  color: white;
+}
+
+.youtube-icon {
+  color: rgb(230, 123, 123);
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  font-size: 100px !important;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.modal-content:hover .youtube-icon {
+  color: red;
+}
+
+.modal-content a {
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+.videos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoCard {
+  margin: 0.5vmax;
+  width: 30vmax;
+  height: 48vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  border: none;
+}
+
+.playbtn {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.096);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.videoCard:hover .playbtn {
+    background-color: rgba(255, 255, 255, 0.548);
+    transform: scale(1.1);
+  }
+
+.videoCard p {
+  color: white;
+  margin: 1vmax;
+}
